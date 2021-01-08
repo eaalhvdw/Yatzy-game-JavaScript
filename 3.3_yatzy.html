@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yatzy</title>
+    <link rel="icon" href="imgdices/dice6.png" type="image/png">
+    <link rel="stylesheet" href="3.3_yatzy.css"/>
+    <script src="yatzy.js" defer></script>
+</head>
+<body>
+    <h1>Yatzy</h1>
+    <div id="container">
+        <div id="play">
+            <div id="dices">
+                <!-- Test mulighed for billeder som knapper, som erstatning af checkboxes.
+                <button>
+                    <img src="imgdices/dice1.png" alt="dice1">
+                </button>
+                -->
+                <img src="imgdices/dice1.png"/> <!--Ændring efter aflevering: 5 -> 1-->
+                <img src="imgdices/dice2.png"/>
+                <img src="imgdices/dice3.png"/> <!--Ændring efter aflevering: 1 -> 3-->
+                <img src="imgdices/dice4.png"/>
+                <img src="imgdices/dice5.png"/> <!--Ændring efter aflevering: 4 -> 5-->
+
+            </div>
+            <div id="checkboxes">
+                <input type="checkbox" name="Hold1" value="true">Hold
+                <input type="checkbox" name="Hold2" value="true">Hold
+                <input type="checkbox" name="Hold3" value="true">Hold
+                <input type="checkbox" name="Hold4" value="true">Hold
+                <input type="checkbox" name="Hold5" value="true">Hold
+            </div>
+            <div id="buttoncount">
+                <label id="throwCount"></label>
+                <span id="resetDiv"></span>
+                <button type="button">Roll</button>
+            </div>
+        </div>
+        <div id="points">
+            <div id="id-1">1-s</div>
+            <div id="id-2">2-s</div>
+            <div id="id-3">3-s</div>
+            <div id="id-4">4-s</div>
+            <div id="id-5">5-s</div>
+            <div id="id-6">6-s</div>
+            <div id="id-1pair">One pair</div>
+            <div id="id-2pairs">Two pairs</div>
+            <div id="id-3same">Three same</div>
+            <div id="id-4same">Four same</div>
+            <div id="id-house">Full house</div>
+            <div id="id-smallStraight">Small straight</div>
+            <div id="id-largeStraight">Large straight</div>
+            <div id="id-chance">Chance</div>
+            <div id="id-yatzy">Yatzy</div>
+
+            <input class="item" type="text" readonly/>
+            <input class="item" type="text" readonly/>
+            <input class="item" type="text" readonly/>
+            <input class="item" type="text" readonly/>
+            <input class="item" type="text" readonly/>
+            <input class="item" type="text" readonly/>
+
+            <div id="id-sum">Sum</div>
+            <input id="input-sum" class="item" type="text" disabled="true" readonly/>
+            <div id="id-bonus">Bonus</div>
+            <input id="input-bonus" class="item" type="text" disabled="true" readonly/>
+
+            <input class="item" type="text" readonly/>
+            <input class="item" type="text" readonly/>
+            <input class="item" type="text" readonly/>
+            <input class="item" type="text" readonly/>
+            <input class="item" type="text" readonly/>
+            <input class="item" type="text" readonly/>
+            <input class="item" type="text" readonly/>
+            <input class="item" type="text" readonly/>
+            <input class="item" type="text" readonly/>
+
+            <div id="id-total">Total</div>
+            <input id="input-total" class="item" type="text" disabled="true" readonly/>
+        </div>
+    </div>
+</body>
+</html>

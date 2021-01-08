@@ -1,0 +1,134 @@
+body {
+    background-image: url("img/yatzy.png");
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+#container {
+    background-color:black;
+    width: 440px;
+    margin: 5px auto;
+    padding: 5px;
+}
+
+#play {
+    border: 2px solid blue;
+    width: 410px;
+    margin: 5px auto;
+    padding: 5px;
+}
+
+#dices {
+    width: 350px;
+    margin: 5px auto;
+    padding-right: 5px;
+
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15%;
+    grid-auto-flow: column;
+    gap: 20px;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+}
+
+#checkboxes {
+    width: 330px;
+    padding-left: 30px;
+    -webkit-text-fill-color: white;
+    text-align: center;
+    font-size: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1em);
+    grid-auto-flow: column;
+    gap: 10px;
+}
+
+#buttoncount {
+    width: 320px;
+    padding-left: 30px;
+
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-auto-flow: column;
+    gap: 15px;
+}
+
+button {
+    border-color: blue;
+    background-color: black;
+    margin: 10px;
+
+    -webkit-text-fill-color: white;
+    text-alignment: center;
+    font-size: 100%;
+
+    width: 100px;
+    height: 40px;
+
+    /* padding: 5px; */
+}
+
+label {
+    color: white;
+    width: 90%;
+    padding-top: 15px;
+}
+
+#points {
+    border: 2px solid blue;
+   -webkit-text-fill-color: white;
+    width: 385px;           /*Ændring efter aflevering: 410px -> 385px*/
+    margin: 5px auto;
+    padding-top: 8px;       /*Tilføjet efter aflevering*/
+    padding-bottom: 8px;    /*Tilføjet efter aflevering*/
+    padding-left: 35px;     /*Tilføjet efter aflevering*/
+
+    display: grid;
+    grid-template-columns: 30% 10% 12% 10% 12% 10%;  /*Ændring efter aflevering i 1. kolonne: 25% -> 30%, 2. og 4. kolonne: 15% -> 12%*/
+    grid-template-rows: repeat(15, 1.2em);
+    grid-auto-flow: column;
+    gap: 5px;
+}
+
+#id-sum {
+    grid-area: 6/3/7/4;    /*  startRow/startColumn/endRow/endColumn  */
+    text-align: right;
+    margin-right: 4px;      /*Tilføjet efter aflevering*/
+}
+
+#input-sum {
+    grid-area: 6/4/7/5;
+    margin-right: 4px;      /*Tilføjet efter aflevering*/
+}
+
+#id-bonus {
+    grid-area: 6/5/7/6;
+    text-align: right;
+    margin-right: 4px;      /*Tilføjet efter aflevering*/
+}
+
+#input-bonus {
+    grid-area: 6/6/7/7;
+}
+
+#id-total {
+    grid-area: 15/5/16/6;
+    text-align: right;
+    margin-right: 4px;      /*Tilføjet efter aflevering*/
+}
+
+#input-total {
+    grid-area: 15/6/16/7;
+}
+
+.item {
+    text-align: center;
+    -webkit-text-fill-color: blue;
+}

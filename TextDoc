@@ -1,0 +1,16 @@
+Gruppemedlemmer: Thor Slipsager Petersen og Louise Helene Hamle
+
+Fejl og mangler:
+                 1: Funktionerne i yatzy.js markeres som unterminated statements,
+                    selvom de bliver kørt når spillet startes og spillet spilles.
+                    => Svar: Manglende ; som afslutning på hver funktion.
+                 2: (yatzy.js l:34) Funktionen setValues() får en fejl: "Unused definition values"
+                    for udtrykket this.values.
+                    => Svar: Bruges da i getValues(). Konklusion: fejlagtig fejlmeddelelse.
+                 3: (yatzy.js l:276) Funktionen Service() har fejlen: "Unused constant gui"
+                    for initialisering af en konstant, som kalder gui-objektet.
+                    => Svar: Konstanten bruges ikke, og fejlen kan rettes ved at nøjes med at
+                       skrive new gui(yatzyDice), i stedet for const GUI = new GUI(YatzyDice).
+                 4: (yatzy.js l:385) Fejl: "Unused constant service"
+                    for initialisering af en konstant, som kalder service-objektet.
+                    => Svar: Se pkt. 3.
